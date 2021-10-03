@@ -1,0 +1,84 @@
+:root {
+  --dark-gray: rgb(111, 111, 111);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  background: var(--dark-gray);
+  color: #fff;
+}
+
+.move-button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  opacity: 0.5;
+  padding: 1rem;
+  transition: 0.2s;
+}
+
+.move-button:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+#calendar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+#month {
+  font-size: 3rem;
+  font-family: "Sacramento", cursive;
+}
+
+#week {
+  list-style: none;
+  display: flex;
+}
+
+.week-day {
+  width: 50px;
+  display: grid;
+  place-content: center;
+}
+
+#calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-box {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.day-box:hover {
+  cursor: pointer;
+  background: pink;
+  color: var(--dark-gray);
+  transform: translateY(-2px);
+}
+
+.today {
+  opacity: 1;
+  color: pink;
+  font-weight: bold;
+}

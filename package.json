@@ -1,0 +1,21 @@
+{
+  "name": "vanilla-javscript-calendar",
+  "version": "1.0.0",
+  "description": "This is a simple calendar app made with vanilla Javascript.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksyksy815/vanilla-javscript-calendar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksyksy815/vanilla-javscript-calendar/issues"
+  },
+  "homepage": "https://github.com/ksyksy815/vanilla-javscript-calendar#readme"
+}

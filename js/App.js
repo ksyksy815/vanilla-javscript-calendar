@@ -1,10 +1,16 @@
 import Calendar from './Calendar.js'
+import List from './Todos/List.js'
 
 export default class App {
   constructor() {
     this.today = new Date()
     this.displayedYear = new Date().getFullYear()
     this.displayedMonth = new Date().getMonth()
+  }
+
+  renderTodoList (parentEl) {
+    const list = new List(this.today)
+    list.renderListElement(parentEl)
   }
 
   renderNewCalendar (type, monthEl, parentEl) {
@@ -42,6 +48,7 @@ export default class App {
     const daysParent = document.querySelector('#calendar-days')
     const nextBtn = document.querySelector('#next')
     const prevBtn = document.querySelector('#prev')
+    const page = document.querySelector('#main-page')
   
     const calendar = new Calendar(this.today, this.today)
     calendar.renderMonthTitle(monthEl)
@@ -54,5 +61,7 @@ export default class App {
     nextBtn.addEventListener('click', (e) => 
       this.renderNewCalendar(e.target.id, monthEl, daysParent)
     )
+
+    this.renderTodoList(page)
   }
 }

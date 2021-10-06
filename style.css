@@ -113,6 +113,14 @@ main {
   flex-direction: column;
   row-gap: 1rem;
 }
+
+#add-button {
+  width: 25px;
+  height: 25px;
+  align-self: flex-end;
+  font-weight: bold;
+}
+
 #main-page > ul {
   flex: 1 1 auto;
   display: flex;
@@ -124,6 +132,24 @@ main {
 
 #main-page > ul > li {
   width: 100%;
-
   background: 1px solid #e5e5e5;
+}
+
+#todo-form {
+  width: 100%;
+  display: flex;
+}
+
+#todo-form > div {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#todo-form > div > input {
+  padding: 0.5rem;
+}
+
+#todo-form > button {
+  padding: 0.5rem;
 }

@@ -6,6 +6,8 @@ export default class App {
     this.today = new Date()
     this.displayedYear = new Date().getFullYear()
     this.displayedMonth = new Date().getMonth()
+    this.createMode = false
+    this.currentSelectDay = this.today
   }
 
   renderTodoList (parentEl) {
